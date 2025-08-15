@@ -1,0 +1,48 @@
+/* Styling for the Login section */
+
+.login-container {
+  max-width:900px;
+  margin:10% auto 0 auto; /* margin: top, right, bottom, left */
+  padding:20px;
+  overflow:hidden;
+  border:2px solid #2190FF;
+  border-radius:20px;
+}
+.login-container h1,.login-container h3,.login-container p {
+  text-align:center;
+}
+.login-container a {
+  color:#2190FF;
+}
+
+.login-form {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.login-form table {
+  margin:5px 0px;
+  font-size:16px;
+}
+.login-form table input {
+  margin:0 10px 0 10px;
+  padding:10px;
+}
+
+.login-btn-row {
+  margin:10px 0;
+  padding:10px;
+}
+.login-btn-row button {
+  border:2px solid #3685fb;
+  background-color:white;
+  color:black;
+  border-radius:50px;
+  padding:15px 32px;
+  margin:0 10px 0 10px;
+  font-size:16px;
+}
+.login-btn-row button:hover {
+  background-color:#3685fb; 
+  color:white;
+}
