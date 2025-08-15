@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// Necessary modules from React library.
+import React from 'react';
+// Components for routing from react-router-dom library.
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// Custom componenets.
+import Navbar from './Components/Navbar/Navbar';
+import Landing_Page from './Components/Landing_Page/LandingPage';
 
+// Function component for main App.
 function App() {
-  return (
+    // Renders main App component.
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* Sets up BrowserRouter for routing. */}
+        <BrowserRouter>
+            {/* Displays Navbar component. */}
+            <Navbar/>
+            {/* Set up the Routes for different pages */}
+            <Routes>
+                <Route path="/" element={<Landing_Page/>}/>
+            </Routes>
+        </BrowserRouter>
     </div>
-  );
+    );
 }
 
 export default App;
