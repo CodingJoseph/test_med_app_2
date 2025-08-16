@@ -1,3 +1,5 @@
+
+// Custom styles.
 import './SignUp.css';
 
 // Function component for SignUp.

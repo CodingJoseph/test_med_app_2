@@ -1,4 +1,8 @@
+// Necessary modules from React library.
+import React from 'react';
+// Doctor avatar logo for image src.
 import logo from './doctor_avatar.png';
+// Custom styles.
 import './Navbar.css';
 
 // Function component for Navbar.
@@ -8,9 +12,7 @@ const Navbar = () => {
         {/* Navigation logo section */}
         <div className="nav-logo">
             {/* Link to the home page */}
-            <a href="/">
-            StayHealthy <img className="nav-logo-img" src={logo} />
-            </a>
+            <a href="/">StayHealthy <img className="nav-logo-img" src={logo} /></a>
         </div>
         {/* Navigation icon section with an onClick event listener */}
         <div className="nav-icon" onClick="{handleClick}">
